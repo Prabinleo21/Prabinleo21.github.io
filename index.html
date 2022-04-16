@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <title>my first Program - </title>
-    <style>
-       body {
-            margin: 0 auto;
-            background-position:center;
-            background-size: contain;
-        }
-  html{color:#666;}
-  body{backgroud:#ccc;margin:0;}
-  #container {width:6000px; margin:0 auto; backgroud:#fff; }
-  #header { width:100% height:100px; border-botder-bottom:1px solid #c7c7c7; backgroud:#333}
-  #logo { float:left; width:40px; height:40px; backgroud:#ccc;}
-  #top { float:right; width:40px; height:40px; backgroud:#666; border:1px solid #c7c7c7;margin:10px;}
-  #navbar { height: 20px; clear: both;}
-   #navbar ul { margin:0 padding:0; list-style-type:none;}
-   #navbar ul li{ float:left; padding:0 0 0 20px; clear: both;}
-   #navbar ul li a  { font-size:12px; float:left; float:left;padding:0 0 0 20px; display:block;}
-  #banner{backgroud:#666; height:120px; padding:200pxclear:both;}
-  # left_col { float:left; width:333px; padding: 100px; clear: both;}
-  # right_col { float:left; padding: 100px; clear: both;}
-    </style>
-
+<head>
+	<title>Page Layout</title>
+	<style>
+		.head1 {
+			font-size:40px;
+			color:#009900;
+			font-weight:bold;
+		}
+		.head2 {
+			font-size:17px;
+			margin-left:10px;
+			margin-bottom:15px;
+		}
+		body {
+			margin: 0 auto;
+			background-position:center;
+			background-size: contain;
+		}
+	
+		.menu {
+			position: sticky;
+			top: 0;
+			background-color: #009900;
+			padding:10px 0px 10px 0px;
+			color:white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.menu a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.menu-log {
+			right: auto;
+			float: right;
+		}
+		footer {
+			width: 100%;
+			bottom: 0px;
+			background-color: #000;
+			color: #fff;
+			position: absolute;
+			padding-top:20px;
+			padding-bottom:50px;
+			text-align:center;
+			font-size:30px;
+			font-weight:bold;
+		}
+		.body_sec {
+			margin-left:20px;
+		}
+	</style>
 </head>
-  
+
 <body>
-  
-   <!-- Header Section -->
-    <header>
-        <div class="head1">GEOG 6150</div>
-        <div class="head2">A computer science portal for geeks</div>
-    </header>
-  
-  <div id="container">
-    <div id=" header">
-    <div id ="logo"></div>
-      <div id ="top"></div>
-      <div id ="navbar"></div>
-    
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">U of U Geography</a></li>
-        <li><a href="#">Project</a></li>
-          
-      </ul>
-    </div>
-    
-    <div>
-      <div id = "content_area">
-      <div id = "banner"> Banner</div>
-      <div id = "left_col"> Left col</div>
-      <div id = "right_col"> Right Col </div>
-    </div>
-    
-    
-    <div id ="footer">Footer</div>
-      
-    </div>
-    
-  <ul class="Project">
-   
-    
-    <li class="a">Lab 1</li>
-    <li>Lab 2</li>
-    <li>Lab 3</li>
-  </ul>
-
-  <div class="search"
-       >Search the table
-    
-    <link rel ='stylesheet' href = 'index.css'>
-    </div>
-
-<table>
-  <tr>
-  </tr>
-  <tr>
-  </tr>
-</table>
-
+	
+	<!-- Header Section -->
+	<header>
+		<div class="head1">GeeksforGeeks</div>
+		<div class="head2">A computer science portal for geeks</div>
+	</header>
+	
+	<!-- Menu Navigation Bar -->
+	<div class="menu">
+		<a href="#home">HOME</a>
+		<a href="#news">NEWS</a>
+		<a href="#notification">NOTIFICATIONS</a>
+		<div class="menu-log">
+			<a href="#login">LOGIN</a>
+		</div>
+	</div>
+	
+	<!-- Body section -->
+	<div class = "body_sec">
+		<section id="Content">
+			<h3>Content section</h3>
+		</section>
+	</div>
+	
+	<!-- Footer Section -->
+	<footer>Footer Section</footer>
 </body>
-</html>
+</html>				
